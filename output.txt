@@ -1,0 +1,57 @@
+{
+  input: '2**5%3/4+5-12**2',
+  priorityTable: [ [ 10 ], [ 1, 12 ], [ 5 ], [], [ 7, 9 ], [], [ 3 ] ],
+  expression: Expression {
+    units: [
+      Atom { value: 2 },
+      ExponentiationToken {
+        value: '*',
+        priority: 1,
+        consumes: { prev: 1, next: 1 },
+        operator: [Function: operator]
+      },
+      Atom { value: 5 },
+      ModulationToken {
+        value: '*',
+        priority: 6,
+        consumes: { prev: 1, next: 1 },
+        operator: [Function: operator]
+      },
+      Atom { value: 3 },
+      DivisionToken {
+        value: '/',
+        priority: 2,
+        consumes: { prev: 1, next: 1 },
+        operator: [Function: operator]
+      },
+      Atom { value: 4 },
+      AdditionToken {
+        value: '+',
+        priority: 4,
+        consumes: { prev: 1, next: 1 },
+        operator: [Function: operator]
+      },
+      Atom { value: 5 },
+      AdditionToken {
+        value: '+',
+        priority: 4,
+        consumes: { prev: 1, next: 1 },
+        operator: [Function: operator]
+      },
+      UnaryNegationToken {
+        value: '-',
+        priority: 0,
+        consumes: { prev: 0, next: 1 },
+        operator: [Function: operator]
+      },
+      Atom { value: 12 },
+      ExponentiationToken {
+        value: '*',
+        priority: 1,
+        consumes: { prev: 1, next: 1 },
+        operator: [Function: operator]
+      },
+      Atom { value: 2 }
+    ]
+  }
+}

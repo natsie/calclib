@@ -1,0 +1,34 @@
+{
+  "name": "calclib",
+  "version": "0.0.1",
+  "description": "A simple, convenient library for most things calculation.",
+  "keywords": [
+    "calculator",
+    "arithmetic",
+    "maths",
+    "library",
+    "parser",
+    "evaluation"
+  ],
+  "homepage": "https://github.com/natsie/calclib#readme",
+  "bugs": {
+    "url": "https://github.com/natsie/calclib/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natsie/calclib.git"
+  },
+  "license": "MIT",
+  "author": "Oghenevwegba Obire",
+  "type": "module",
+  "main": "dist/calclib.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "@types/node": "^24.7.2",
+    "chai": "^6.2.0",
+    "mocha": "^11.7.4",
+    "typescript": "^5.9.3"
+  }
+}
